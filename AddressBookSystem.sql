@@ -24,3 +24,7 @@ VALUES('kummari','tirupathi','1-106','srikakulam','andhra',532221,'9010640342','
 
 /*UC4-TestCase*/
 UPDATE AddressBookTable SET state='Andhra Pradesh' WHERE firstName='kummari';
+
+/*UC5-TestCase*/
+DELETE FROM AddressBookTable WHERE firstName = 'k' AND lastName = 'ktrrr';
+SELECT * FROM AddressBookTable;
