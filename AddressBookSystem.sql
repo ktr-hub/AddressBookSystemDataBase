@@ -23,8 +23,13 @@ VALUES('kummari','tirupathi','1-106','srikakulam','andhra',532221,'9010640342','
 ('k','ktrrr','1-107','srikakulam','andhra',532221,'9010640349','ktrrr@gmail.com');
 
 /*UC4-TestCase*/
-UPDATE AddressBookTable SET state='Andhra Pradesh' WHERE firstName='kummari';
+UPDATE AddressBookTable 
+SET state='Andhra Pradesh' WHERE firstName='kummari';
 
 /*UC5-TestCase*/
-DELETE FROM AddressBookTable WHERE firstName = 'k' AND lastName = 'ktrrr';
-SELECT * FROM AddressBookTable;
+DELETE FROM AddressBookTable 
+WHERE firstName = 'k' AND lastName = 'ktrrr';
+
+/*UC6-TestCase-Retrieve Person of a city or state*/
+SELECT firstName+' '+lastName AS FullName From AddressBookTable 
+WHERE city='srikakulam';
