@@ -1,9 +1,9 @@
 /* Welcome to Address Book Service Data Base using MySQL client */
 
-/*UC1-TestCase*/
+/*UC1- Creating DataBase*/
 CREATE DATABASE AddressBookSystem;
 
-/*UC2-TestCase*/
+/*UC2- Creating DataTable*/
 CREATE TABLE AddressBookTable 
 (
  firstName VARCHAR(15),
@@ -16,25 +16,28 @@ CREATE TABLE AddressBookTable
  email VARCHAR(15)
 );
 
-/*UC3-TestCase*/
+/*UC3- Inserting data into DataTable*/
 INSERT INTO AddressBookTable 
 VALUES('kummari','tirupathi','1-106','srikakulam','andhra',532221,'9010640342','ktr@gmail.com'),
 ('kummari','ktrr','1-107','srikakulam','andhra',532221,'9010640341','ktrr@gmail.com'),
 ('k','ktrrr','1-107','srikakulam','andhra',532221,'9010640349','ktrrr@gmail.com');
 
-/*UC4-TestCase*/
+/*UC4- Editing Details*/
 UPDATE AddressBookTable 
 SET state='Andhra Pradesh' WHERE firstName='kummari';
 
-/*UC5-TestCase*/
+/*UC5- Deleting Data*/
 DELETE FROM AddressBookTable 
 WHERE firstName = 'k' AND lastName = 'ktrrr';
 
-/*UC6-TestCase-Retrieve Person of a city or state*/
+/*UC6-Retrieve Person of a city or state*/
 SELECT firstName+' '+lastName AS FullName From AddressBookTable 
 WHERE city='srikakulam';
 
-/*UC7-TestCase-Count of Persons by city/state*/
+/*UC7-Count of Persons by city/state*/
 SELECT COUNT(firstName) FROM AddressBookTable
 WHERE city ='srikakulam' AND state='Andhra Pradesh';
 
+/*UC8-Person names alphabetical order of specific city*/
+SELECT lastName FROM AddressBookTable
+WHERE city = 'srikakulam' ORDER BY lastName; 
