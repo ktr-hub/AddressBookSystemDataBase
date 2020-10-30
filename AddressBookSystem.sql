@@ -16,4 +16,8 @@ CREATE TABLE AddressBookTable
  email VARCHAR(15)
 );
 
+/*UC3-TestCase*/
+INSERT INTO AddressBookTable 
+VALUES('kummari','tirupathi','1-106','srikakulam','andhra',532221,'9010640342','ktr@gmail.com');
+
 SELECT * FROM AddressBookTable;
