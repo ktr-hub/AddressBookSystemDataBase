@@ -1,4 +1,1 @@
-/*UC1-TestCase*/
-
-CREATE DATABASE AddressBookSystem;
-
+/* Welcome to Address Book Service Data Base using MySQL client */
