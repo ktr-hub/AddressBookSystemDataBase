@@ -33,3 +33,8 @@ WHERE firstName = 'k' AND lastName = 'ktrrr';
 /*UC6-TestCase-Retrieve Person of a city or state*/
 SELECT firstName+' '+lastName AS FullName From AddressBookTable 
 WHERE city='srikakulam';
+
+/*UC7-TestCase-Count of Persons by city/state*/
+SELECT COUNT(firstName) FROM AddressBookTable
+WHERE city ='srikakulam' AND state='Andhra Pradesh';
+
