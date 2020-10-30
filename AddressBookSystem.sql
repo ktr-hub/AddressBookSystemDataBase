@@ -18,6 +18,9 @@ CREATE TABLE AddressBookTable
 
 /*UC3-TestCase*/
 INSERT INTO AddressBookTable 
-VALUES('kummari','tirupathi','1-106','srikakulam','andhra',532221,'9010640342','ktr@gmail.com');
+VALUES('kummari','tirupathi','1-106','srikakulam','andhra',532221,'9010640342','ktr@gmail.com'),
+('kummari','ktrr','1-107','srikakulam','andhra',532221,'9010640341','ktrr@gmail.com'),
+('k','ktrrr','1-107','srikakulam','andhra',532221,'9010640349','ktrrr@gmail.com');
 
-SELECT * FROM AddressBookTable;
+/*UC4-TestCase*/
+UPDATE AddressBookTable SET state='Andhra Pradesh' WHERE firstName='kummari';
