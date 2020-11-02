@@ -56,4 +56,4 @@ GROUP BY type;
 
 INSERT INTO AddressBookTable 
 VALUES('kummari','narsi','1-106','srikakulam','andhra',532221,'9010640341','narsi@gmail.com','narsi','family'),
-('kummari','narsi','1-106','srikakulam','andhra',532221,'9010640341','narsi@gmail.com','narsi','type')
+('kummari','narsi','1-106','srikakulam','andhra',532221,'9010640341','narsi@gmail.com','narsi','friends')
