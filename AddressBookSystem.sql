@@ -53,7 +53,10 @@ FROM AddressBookTable
 GROUP BY type;
 
 /*UC11-AddIntoBothTypes*/
-
 INSERT INTO AddressBookTable 
 VALUES('kummari','narsi','1-106','srikakulam','andhra',532221,'9010640341','narsi@gmail.com','narsi','family'),
 ('kummari','narsi','1-106','srikakulam','andhra',532221,'9010640341','narsi@gmail.com','narsi','friends')
+
+/*UC12-ER_Diagram*/
+
+
