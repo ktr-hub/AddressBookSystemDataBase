@@ -1,6 +1,5 @@
 /* Welcome to Address Book Service Data Base using MySQL client */
-
-/*UC1- Creating DataBase*/
+/* UC1- Creating DataBase*/
 CREATE DATABASE AddressBookSystem;
 
 /*UC2- Creating DataTable*/
@@ -41,3 +40,9 @@ WHERE city ='srikakulam' AND state='Andhra Pradesh';
 /*UC8-Person names alphabetical order of specific city*/
 SELECT lastName FROM AddressBookTable
 WHERE city = 'srikakulam' ORDER BY lastName; 
+
+select*from AddressBookTable;
+
+/*UC9-Name and Type*/
+ALTER TABLE AddressBookTable ADD name VARCHAR(30);
+ALTER TABLE AddressBookTable ADD type VARCHAR(30);
