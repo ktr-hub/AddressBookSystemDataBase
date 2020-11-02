@@ -46,3 +46,8 @@ select*from AddressBookTable;
 /*UC9-Name and Type*/
 ALTER TABLE AddressBookTable ADD name VARCHAR(30);
 ALTER TABLE AddressBookTable ADD type VARCHAR(30);
+
+/*UC10-Count by type*/
+SELECT type,COUNT(name) AS TotalCount
+FROM AddressBookTable
+GROUP BY type;
